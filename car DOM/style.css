@@ -1,0 +1,147 @@
+/* CSS Boilerplate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: black;
+    background-image: url('https://t4.ftcdn.net/jpg/10/72/37/45/360_F_1072374547_r0axOSZS8Tako4tKl97znjLrF4CCYXyo.jpg');
+    background-size: cover;
+}
+
+.car-box {
+    position: relative;
+    width: 400px;
+    margin: 50px auto;
+
+}
+
+.car {
+    width: 600px;
+    height: 400px;
+}
+
+.light {
+    position: absolute;
+    width: 120px;
+    /* bigger glow area */
+    height: 60px;
+    background: radial-gradient(circle,
+            rgba(255, 255, 200, 1) 0%,
+            /* bright center */
+            rgba(255, 255, 150, 0.8) 30%,
+            /* soft glow */
+            rgba(255, 255, 80, 0.4) 60%,
+            /* outer glow */
+            rgba(255, 255, 0, 0) 100%
+            /* fade out */
+        );
+    border-radius: 50%;
+    opacity: 0;
+    /* OFF */
+    filter: blur(8px);
+    /* smooth glow */
+    transition: opacity 0.2s ease-out;
+    /* smooth turning ON */
+}
+
+
+.left-light {
+    top: 170px;
+    left: 74px;
+}
+
+.right-light {
+    top: 170px;
+    right: -130px;
+}
+
+button#lightOn {
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    padding: 10px 29px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button#lightOff {
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+button#lightOn:hover,
+button#lightOff:hover {
+    cursor: pointer;
+    background: #444;
+    color: white;
+}
+
+button#lightOn:active,
+button#lightOff:active {
+    transform: scale(0.98);
+}
+
+button#indicatorLeft {
+    border-radius: 5px;
+    background-color: rgb(250, 214, 9);
+    color: white;
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+button#indicatorRight {
+    border-radius: 5px;
+    background-color: rgb(250, 214, 9);
+    color: white;
+    position: absolute;
+    top: 230px;
+    left: 10px;
+    padding: 10px 9px;
+    font-size: 16px;
+}
+
+button#indicatorLeft:hover,
+button#indicatorRight:hover {
+    cursor: pointer;
+    background: #444;
+    color: white;
+}
+
+button#indicatorLeft:active,
+button#indicatorRight:active {
+    transform: scale(0.98);
+}
+
+button#hazard {
+    border-radius: 5px;
+    background-color: rgb(240, 0, 0);
+    color: white;
+    position: absolute;
+    top: 280px;
+    left: 10px;
+    padding: 10px 35px;
+    font-size: 16px;
+}
+
+button#hazard:hover {
+    cursor: pointer;
+    background: #444;
+    color: white;
+}
