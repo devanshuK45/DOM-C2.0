@@ -1,0 +1,52 @@
+/* CSS Boilerplate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #050505;
+  
+}
+
+button {
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  position: relative;
+  z-index: 9;
+    border: none;
+    border-radius: 5px;
+      box-shadow: 0 4px 0 #7a0000;
+  transition: transform 0.05s ease, box-shadow 0.05s ease;
+}
+
+:hover button {
+  background-color: rgb(255, 0, 0);
+  color: white;
+
+}
+
+button:active {
+  transform: translateY(3px);        /* moves down when clicked */
+  box-shadow: 0 1px 0 #7a0000;  
+}
+
+h1{
+    color: white;
+    font-size: 2rem;
+    white-space: nowrap;
+}
